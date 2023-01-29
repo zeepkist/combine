@@ -10,7 +10,7 @@ Install the following system dependencies:
 
 - [Git](https://git-scm.com/downloads)
 - [Node.js](https://nodejs.org/en/) (19.5.0 or newer)
-- [Yarn](https://yarnpkg.com/getting-started/install)
+- [Yarn](https://yarnpkg.com/getting-started/install) (or *npm*, which comes with Node.js)
 
 ### Clone the repository
 
@@ -25,11 +25,19 @@ git clone https://github.com/wopian/zeepkist-super-league && cd zeepkist-super-l
 ```bash
 yarn
 ```
+```bash
+# if using npm:
+npm install
+```
 
 ### Run
 
 ```bash
 yarn start
+```
+```bash
+# if using npm:
+npm run start
 ```
 
 After running the command above, the combined data will be available in the `event-data` directory.

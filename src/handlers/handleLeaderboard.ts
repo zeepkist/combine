@@ -30,12 +30,14 @@ export const handleLeaderboard = (
       data.push({
         SteamId: record.SteamId,
         Username: record.Username,
-        [name]: record.Time,
+        [name]: record.Time || undefined,
         [`${name}Points`]: 0
       })
     } else {
-      data[index][name] = record.Time
+      data[index][name] = record.Time || undefined
       data[index][`${name}Points`] = 0
     }
   }
+
+  return data
 }

@@ -34,11 +34,11 @@ yarn start
 
 After running the command above, the combined data will be available in the `event-data` directory.
 
-You can copy the contents of these files into a Google Sheets document and expand the columns with `Data -> Split text to columns` to view the data.
+You can copy the contents of these files into a Google Sheets document and expand the columns with `Data -> Split text to columns` to view the data. The output is formatted to work with the [Super League Events Template](https://docs.google.com/spreadsheets/d/1QaLowfkiIYQhugZABP3YpIqtZf1qvA2T5SNb6tp_WTQ/edit?usp=sharing) spreadsheet which you can copy and use for your own events.
 
 You may need to select the `Total` column and set the format to `Auto` for the formula to work.
 
-### Using your own leaderboard data
+## Using your own leaderboard data
 
 1. Download the leaderboard logger from [zeepkist.mod.io](https://zeepkist.old.mod.io/leaderboard-logger)
 2. Open the logger config file (`Zeepkist/BepInEx/config/net.tnrd.zeepkist.leaderboardlogger.cfg`) and set the options to:
@@ -54,7 +54,7 @@ You may need to select the `Total` column and set the format to `Auto` for the f
 5. Copy the leaderboard data from the `%userprofile%\AppData\Roaming\Zeepkist\C:\Users\wopia\AppData\Roaming\Zeepkist\Leaderboard Logs` directory into the directory you created in step 4
 6. Optionally edit the array in `src/pointsDistribution.ts` to change the points distribution for your event
    - The array is ordered from first to last place that receives points and the values are the number of points each place receives
-7. Run `yarn start` to combine the data for your event
+7. Follow the steps in the [How to Use](#how-to-use) / [Run](#run) section to combine the leaderboard data into a single file
 
 Remember to clear out your leaderboard logs after each event to avoid combining leaderboards from previous events.
 

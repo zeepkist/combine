@@ -1,0 +1,69 @@
+{
+  "name": "zeepkist-super-league",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .js,.cjs,.mjs,.ts,.cts,.mts --fix --ignore-path .gitignore",
+    "lint:ci": "eslint . --ext .js,.cjs,.mjs,.ts,.cts,.mts --ignore-path .gitignore",
+    "test": "ava",
+    "coverage": "c8 ava"
+  },
+  "dependencies": {
+    "csv-parse": "~5.3.3",
+    "csv-stringify": "~6.2.3"
+  },
+  "devDependencies": {
+    "@ava/typescript": "~3.0.1",
+    "@rushstack/eslint-patch": "~1.2.0",
+    "@semantic-release/changelog": "~6.0.2",
+    "@semantic-release/commit-analyzer": "~9.0.2",
+    "@semantic-release/github": "~8.0.7",
+    "@semantic-release/release-notes-generator": "~10.0.3",
+    "@types/node": "~18.11.18",
+    "@typescript-eslint/eslint-plugin": "~5.49.0",
+    "@typescript-eslint/parser": "~5.49.0",
+    "ava": "~5.1.1",
+    "c8": "~7.12.0",
+    "eslint": "~8.32.0",
+    "eslint-config-prettier": "~8.6.0",
+    "eslint-plugin-import": "~2.27.4",
+    "eslint-plugin-prettier": "~4.2.1",
+    "eslint-plugin-simple-import-sort": "~9.0.0",
+    "eslint-plugin-unicorn": "~45.0.2",
+    "prettier": "~2.8.3",
+    "semantic-release": "~20.1.0",
+    "tsx": "~3.12.2",
+    "typescript": "~4.9.4"
+  },
+  "ava": {
+    "utilizeParallelBuilds": true,
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader",
+      "tsx"
+    ]
+  },
+  "c8": {
+    "all": true,
+    "skipFull": true,
+    "src": [
+      "dist"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "local>wopian/renovate-config"
+    ]
+  },
+  "packageManager": "yarn@3.3.1"
+}

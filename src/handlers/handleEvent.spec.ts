@@ -7,3 +7,7 @@ test('handles an event', t => {
   t.is(handleEvent(), '')
 })
 */
+
+test('TODO', t => {
+  t.is(true, true)
+})

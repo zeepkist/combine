@@ -51,7 +51,7 @@ You may need to select the `Total` column and set the format to `Auto` for the f
 1. Download the leaderboard logger from [zeepkist.mod.io](https://zeepkist.old.mod.io/leaderboard-logger)
 2. Open the logger config file (`Zeepkist/BepInEx/config/net.tnrd.zeepkist.leaderboardlogger.cfg`) and set the options to:
 
-   ```toml
+   ```conf
    [Formatting]
    Filename = %Date:yyyyMMddTHHmmss%_%LevelUid%_%Name%.csv
    Entry = %SteamId%,%Username%,%Time%,%ZeepkistId%,%ColorId%,%HatId%

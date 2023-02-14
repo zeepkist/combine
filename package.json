@@ -8,7 +8,7 @@
     "super-league": "dist/cli.js"
   },
   "scripts": {
-    "start": "tsx src/index.ts",
+    "dev": "tsx src/cli.ts -i data -o output",
     "build": "tsc",
     "lint": "eslint . --ext .js,.cjs,.mjs,.ts,.cts,.mts --fix --ignore-path .gitignore",
     "lint:ci": "eslint . --ext .js,.cjs,.mjs,.ts,.cts,.mts --ignore-path .gitignore",

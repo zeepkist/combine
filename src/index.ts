@@ -33,5 +33,3 @@ export const combine = (input: string, output: string) => {
   console.log(`Finished processing. Output is in ${output}`)
   return
 }
-
-combine('data', 'output')

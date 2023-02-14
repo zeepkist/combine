@@ -130,6 +130,7 @@ Output Folder
 
 ```text
 Output Folder
+ ├── metadata.json # auto-generated file containing metadata for all seasons
  ├── Season 1
  │   ├── metadata.json
  │   ├── standings.json

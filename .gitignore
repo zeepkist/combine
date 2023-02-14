@@ -110,3 +110,7 @@ typings/
 !.yarn/versions
 .pnp.cjs
 .pnp.loader.mjs
+
+dist
+data
+output

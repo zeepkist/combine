@@ -1,8 +1,12 @@
 {
-  "name": "zeepkist-super-league",
+  "name": "@zeepkist/combine",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "super-league": "dist/cli.js"
+  },
   "scripts": {
     "start": "tsx src/index.ts",
     "build": "tsc",
@@ -12,8 +16,8 @@
     "coverage": "c8 ava"
   },
   "dependencies": {
-    "csv-parse": "~5.3.3",
-    "csv-stringify": "~6.2.3"
+    "commander": "~10.0.0",
+    "csv-parse": "~5.3.3"
   },
   "devDependencies": {
     "@ava/typescript": "~3.0.1",
@@ -21,6 +25,7 @@
     "@semantic-release/changelog": "~6.0.2",
     "@semantic-release/commit-analyzer": "~9.0.2",
     "@semantic-release/github": "~8.0.7",
+    "@semantic-release/npm": "~9.0.2",
     "@semantic-release/release-notes-generator": "~10.0.3",
     "@types/node": "~18.13.0",
     "@typescript-eslint/eslint-plugin": "~5.51.0",
@@ -37,6 +42,11 @@
     "semantic-release": "~20.1.0",
     "tsx": "~3.12.2",
     "typescript": "~4.9.4"
+  },
+  "dependenciesMeta": {
+    "esbuild": {
+      "built": true
+    }
   },
   "ava": {
     "utilizeParallelBuilds": true,

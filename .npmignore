@@ -1,0 +1,15 @@
+.github
+.vscode
+.yarn
+coverage
+data
+output
+.eslintrc.cjs
+.prettierignore
+.prettierrc.json
+.releaserc
+.yarnrc.yml
+tsconfig.json
+.gitattributes
+.gitignore
+yarn.lock

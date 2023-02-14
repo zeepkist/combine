@@ -12,4 +12,14 @@ program.parse()
 
 const { input, output } = program.opts()
 
+if (!input || typeof input !== 'string') {
+  console.log('Please provide a valid input path')
+  process.exit(1)
+}
+
+if (!output || typeof output !== 'string') {
+  console.log('Please provide a valid output path')
+  process.exit(1)
+}
+
 combine(input, output)

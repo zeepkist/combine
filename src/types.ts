@@ -1,4 +1,5 @@
 export interface User {
+  steamId?: string
   username: string
   totalPoints: number
 }

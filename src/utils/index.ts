@@ -1,5 +1,3 @@
-export * from './generateTotalsFormula.js'
-export * from './insertKey.js'
-export * from './numberToAlpha.js'
+export * from './handleEvent.js'
+export * from './handleLeaderboard.js'
 export * from './pointsDistribution.js'
-export * from './types.js'

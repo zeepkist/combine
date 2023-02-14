@@ -8,74 +8,178 @@ Combines leaderboard data from the monthly Zeepkist Super League (ZSL) events in
 
 Install the following system dependencies:
 
-- [Git](https://git-scm.com/downloads)
 - [Node.js](https://nodejs.org/en/) (19.5.0 or newer)
-- [Yarn](https://yarnpkg.com/getting-started/install) (or *npm*, which comes with Node.js)
 
-### Clone the repository
+Install the following Zeepkist plugins:
 
-This will create a new directory called `zeepkist-super-league` in your current working directory and then enter it.
+- [Leaderboard Logger](https://zeepkist.old.mod.io/leaderboard-logger)
 
-```bash
-git clone https://github.com/wopian/zeepkist-super-league && cd zeepkist-super-league
+### Configure the Leaderboard Logger plugin
+
+Open the logger config file (`Zeepkist/BepInEx/config/net.tnrd.zeepkist.leaderboardlogger.cfg`) and set the options to:
+
+```conf
+[Formatting]
+Filename = %Date:yyyyMMddTHHmmss%_%LevelUid%_%Name%.csv
+Entry = %SteamId%,%Username%,%Time%,%ZeepkistId%,%ColorId%,%HatId%
 ```
 
-### Install project dependencies
+### Save the leaderboard data in Zeepkist
+
+Run Zeepkist and use `/start log` at the start of each level in an online room to log the leaderboard data (you do not need to be host)
+
+Log files are saved to `%userprofile%\AppData\Roaming\Zeepkist\Leaderboard Logs`
+
+### Install this app
 
 ```bash
-yarn
+npm install -g @zeepkist/combine
 ```
+
+### Run this app
+
+Create a new folder for the event and move the leaderboard logs into the folder. E.g `%userprofile%\AppData\Roaming\Zeepkist\Leaderboard Logs\Example Event`
+
+Run the app with the following command:
+
 ```bash
-# if using npm:
-npm install
+super-league --input 'Example Event' --output 'Example Event Results'
 ```
 
-### Run
+The app will output the combined leaderboard data to the `Example Event Results` folder.
+
+#### Multiple Events (with Season Standings)
+
+If you have multiple events in the same season, you can combine them all into a single season standings with individual results for each event by running the app on the parent folder. E.g `%userprofile%\AppData\Roaming\Zeepkist\Leaderboard Logs\Season 1\Example Event`
 
 ```bash
-yarn start
+super-league --input 'Season 1' --output 'Season 1 Results'
 ```
+
+#### Multiple Seasons
+
+If you have multiple seasons, you can generate all seasons at once by running the app on the parent folder. E.g `%userprofile%\AppData\Roaming\Zeepkist\Leaderboard Logs\Seasons\Season 1\Example Event`
+
 ```bash
-# if using npm:
-npm run start
+super-league --input 'Seasons' --output 'Seasons Results'
 ```
 
-After running the command above, the combined data will be available in the `event-data` directory.
+## Input File Structure
 
-You can copy the contents of these files into a Google Sheets document and expand the columns with `Data -> Split text to columns` to view the data. The output is formatted to work with the [Super League Events Template](https://docs.google.com/spreadsheets/d/1QaLowfkiIYQhugZABP3YpIqtZf1qvA2T5SNb6tp_WTQ/edit?usp=sharing) spreadsheet which you can copy and use for your own events.
+### Single Event
 
-You may need to select the `Total` column and set the format to `Auto` for the formula to work.
+One or more CSV leaderboard logs in the `input` folder
 
-## Using your own leaderboard data
+```text
+Input Folder
+ ├── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+ ├── 2021-01-01T12:00:00_1234567890_Example Level 2.csv
+ └── 2021-01-01T12:00:00_1234567890_Example Level 3.csv
+```
 
-1. Download the leaderboard logger from [zeepkist.mod.io](https://zeepkist.old.mod.io/leaderboard-logger)
-2. Open the logger config file (`Zeepkist/BepInEx/config/net.tnrd.zeepkist.leaderboardlogger.cfg`) and set the options to:
+### Multiple Events (with Season Standings)
 
-   ```conf
-   [Formatting]
-   Filename = %Date:yyyyMMddTHHmmss%_%LevelUid%_%Name%.csv
-   Entry = %SteamId%,%Username%,%Time%,%ZeepkistId%,%ColorId%,%HatId%
-   ```
+One or more folders in the `input` folder each containing one or more CSV leaderboard logs
 
-3. Run Zeepkist and use `/start log` at the start of each level in an online room to log the leaderboard data (you do not need to be host)
-4. Create a new directory inside the `data` directory and name it after the event
-5. Copy the leaderboard data from the `%userprofile%\AppData\Roaming\Zeepkist\C:\Users\wopia\AppData\Roaming\Zeepkist\Leaderboard Logs` directory into the directory you created in step 4
-6. Optionally edit the array in `src/pointsDistribution.ts` to change the points distribution for your event
-   - The array is ordered from first to last place that receives points and the values are the number of points each place receives
-7. Follow the steps in the [How to Use](#how-to-use) / [Run](#run) section to combine the leaderboard data into a single file
+```text
+Input Folder
+   ├── Example Event 1
+   │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+   └── Example Event 2
+      └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+```
 
-Remember to clear out your leaderboard logs after each event to avoid combining leaderboards from previous events.
+### Multiple Seasons
 
-## Data
+One or more folders in the `input` folder each containing one or more events (see above)
 
-The raw data is available in the `data` directory and is split into folders for each event.
+```text
+Input Folder
+   ├── Season 1
+   │   ├── Example Event 1
+   │   │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+   │   └── Example Event 2
+   │      └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+   └── Season 2
+      ├── Example Event 1
+      │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+      └── Example Event 2
+         └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+```
 
-Each event folder contains a series of CSV files. The CSV files are named after the room name and level played and contain the following columns:
+## Output File Structure
 
-```ts
-interface Data {
-  SteamId: string
-  Username: string
-  Time: number // in seconds
+### Single Event
+
+```text
+Output Folder
+ └── Output Folder.json
+```
+
+### Multiple Events (with Season Standings)
+
+```text
+Output Folder
+ ├── metadata.json
+ ├── standings.json
+ ├── Example Event 1.json
+ └── Example Event 2.json
+```
+
+### Multiple Seasons
+
+```text
+Output Folder
+ ├── Season 1
+ │   ├── metadata.json
+ │   ├── standings.json
+ │   ├── Example Event 1.json
+ │   └── Example Event 2.json
+ └── Season 2
+     ├── metadata.json
+     ├── standings.json
+     ├── Example Event 1.json
+     └── Example Event 2.json
+```
+
+## Metadata Files (Optional)
+
+You can add metadata to events and seasons by creating a `metadata.json` file in the season folder.
+
+#### Given the `input` folder structure of multiple events:
+
+```text
+Input Folder
+   ├── metadata.json
+   ├── 2023-01-01
+   │   └── *.csv
+   └── 2023-02-01
+      └── *.csv
+```
+
+#### Given the `input` folder structure of multiple seasons:
+
+```text
+Input Folder
+   └── Season 1
+       ├── metadata.json
+       ├── 2023-01-01
+       │   └── *.csv
+       └── 2023-02-01
+          └── *.csv
+```
+
+The file should be structured as:
+
+```json
+{
+  "2023-01-01": {
+    "name": "Example Event 1",
+    "workshopId": "1234"
+  },
+  "2023-02-01": {
+    "name": "Example Event 2",
+    "workshopId": "5678"
+  }
 }
 ```

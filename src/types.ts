@@ -18,3 +18,10 @@ export interface Record {
   ColorId: string
   HatId: string
 }
+
+export interface Metadata {
+  [key: string]: {
+    name: string
+    workshopId: string
+  }
+}

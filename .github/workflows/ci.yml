@@ -4,6 +4,7 @@ on:
   push:
   workflow_dispatch:
     branches: [develop]
+  merge_group:
 
 env:
   FORCE_COLOR: true

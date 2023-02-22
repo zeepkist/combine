@@ -2,6 +2,14 @@
   "name": "@zeepkist/combine",
   "version": "1.0.0",
   "license": "MIT",
+  "description": "Combines leaderboard data from the monthly Zeepkist Super League (ZSL) events into a single dataset per event",
+  "author": "James Harris <wopian@wopian.me>",
+  "homepage": "https://github.com/zeepkist/combine#readme",
+  "repository": "https://github.com/zeepkist/combine",
+  "bugs": {
+    "url": "https://github.com/zeepkist/combine/issues"
+  },
+  "funding": "https://github.com/sponsors/wopian",
   "type": "module",
   "main": "dist/index.js",
   "bin": {

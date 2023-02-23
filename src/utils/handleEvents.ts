@@ -24,9 +24,11 @@ export const handleEvents = (
       const seasonUser = seasonUsers.get(steamId)
       if (seasonUser) {
         seasonUser.username = user.username
+        seasonUser.team = user.team
       } else {
         seasonUsers.set(steamId, {
           username: user.username,
+          team: user.team,
           totalPoints: 0
         })
       }
@@ -41,6 +43,7 @@ export const handleEvents = (
 
         const seasonUser = seasonUsers.get(item.steamId)
         item.username = seasonUser?.username ?? user?.username ?? ''
+        item.team = seasonUser?.team ?? user?.team ?? undefined
       }
     }
 

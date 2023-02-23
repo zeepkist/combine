@@ -23,7 +23,10 @@ export const handleSeasons = (
     seasonMetadata.set(season, metadata)
   }
 
-  writeFileSync(`${output}/metadata.json`, JSON.stringify([...seasonMetadata]))
+  writeFileSync(
+    `${output}/metadata.json`,
+    JSON.stringify([...seasonMetadata], undefined, 2)
+  )
 
   console.log(`Generated ${seasons.length} seasons`)
 }

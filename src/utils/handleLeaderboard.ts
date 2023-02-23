@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs'
 import { parse } from 'csv-parse/sync'
 
 import { LevelsMap, RawRecord, UsersMap } from '../types.js'
+import { splitUserTeam } from './index.js'
 
 interface Properties {
   levels: LevelsMap
@@ -27,8 +28,10 @@ export const handleLeaderboard = ({
   })
 
   for (const record of records) {
+    const { username, team } = splitUserTeam(record.Username)
     users.set(record.SteamId, {
-      username: record.Username,
+      username,
+      team,
       totalPoints: 0
     })
 

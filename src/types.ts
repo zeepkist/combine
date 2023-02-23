@@ -9,6 +9,7 @@ export interface RawRecord {
 
 interface User {
   username: string
+  team?: string
   steamId: string
 }
 

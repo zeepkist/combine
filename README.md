@@ -147,6 +147,11 @@ Output Folder
 
 You can add metadata to events and seasons by creating a `metadata.json` file in the season folder.
 
+Metadata allows you to:
+
+- Add a custom name and workshop ID to each event of a season.
+- Change the point system for a season
+
 #### Given the `input` folder structure of multiple events:
 
 ```text
@@ -174,13 +179,17 @@ The file should be structured as:
 
 ```json
 {
-  "2023-01-01": {
-    "name": "Example Event 1",
-    "workshopId": "1234"
+  "events": {
+    "2023-01-01": {
+      "name": "Example Event 1",
+      "workshopId": "1234"
+    },
+    "2023-02-01": {
+      "name": "Example Event 2",
+      "workshopId": "5678"
+    }
   },
-  "2023-02-01": {
-    "name": "Example Event 2",
-    "workshopId": "5678"
-  }
+  "points": [10, 7, 5, 3], // 1st, 2nd, 3rd, 4th ... etc,
+  "finishPoints": 0 // points for finishing the level (any position not covered by the "points" array, e.g 5th or lower in example above)
 }
 ```

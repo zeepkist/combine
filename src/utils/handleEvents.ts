@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 
-import { Data, Metadata, User } from '../types.js'
+import { Event, EventsMap, Metadata, UsersMap, UserStanding } from '../types.js'
 import { handleEvent } from './index.js'
 
 export const handleEvents = (
@@ -8,8 +8,8 @@ export const handleEvents = (
   input: string,
   output: string
 ) => {
-  const seasonUsers = new Map<string, User>()
-  const seasonEvents = new Map<string, Map<string, Data[]>>()
+  const seasonUsers: UsersMap = new Map()
+  const seasonEvents: EventsMap = new Map()
   let metadata: Metadata = {}
 
   if (events.includes('metadata.json')) {
@@ -61,9 +61,17 @@ export const handleEvents = (
       `${output}/${event.replace('../', '')}.json`,
       JSON.stringify(
         {
-          users: [...users].sort((a, b) => b[1].totalPoints - a[1].totalPoints),
-          levels: [...levels]
-        },
+          users: [...users]
+            .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
+            .map(([steamId, user]) => ({
+              ...user,
+              steamId
+            })),
+          levels: [...levels].map(([level, standings]) => ({
+            level,
+            standings
+          }))
+        } as Event,
         undefined,
         2
       )
@@ -75,11 +83,14 @@ export const handleEvents = (
     JSON.stringify(
       [...seasonUsers]
         .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
-        .map(([steamId, user]) => {
-          user.steamId = steamId
-          user.totalPoints = Number(user.totalPoints.toFixed(2))
-          return user
-        }),
+        .map(
+          ([steamId, user]) =>
+            ({
+              ...user,
+              steamId,
+              totalPoints: Number(user.totalPoints.toFixed(2))
+            } as UserStanding)
+        ),
       undefined,
       2
     )

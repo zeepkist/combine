@@ -1,9 +1,9 @@
 import { readdirSync } from 'node:fs'
 
-import { LevelsMap, UsersMap } from '../types.js'
+import { LevelsMap, Metadata, UsersMap } from '../types.js'
 import { handleLeaderboard, pointsDistribution } from './index.js'
 
-export const handleEvent = (path: string) => {
+export const handleEvent = (path: string, metadata: Metadata) => {
   const files = readdirSync(path)
   const levels: LevelsMap = new Map()
   const users: UsersMap = new Map()
@@ -17,10 +17,13 @@ export const handleEvent = (path: string) => {
     })
   }
 
+  const points = metadata.points ?? pointsDistribution
+  const finishPoints = metadata.finishPoints ?? 1
+
   for (const [, data] of levels) {
     data.sort((a, b) => a.time - b.time)
     data.map((item, index) => {
-      item.points = pointsDistribution[index] || 1 // 1 point for everyone who finished the level
+      item.points = points[index] || finishPoints
     })
   }
 

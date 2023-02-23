@@ -1,12 +1,12 @@
 import { readdirSync } from 'node:fs'
 
-import { Data, User } from '../types.js'
+import { LevelsMap, UsersMap } from '../types.js'
 import { handleLeaderboard, pointsDistribution } from './index.js'
 
 export const handleEvent = (path: string) => {
   const files = readdirSync(path)
-  const levels = new Map<string, Data[]>()
-  const users = new Map<string, User>()
+  const levels: LevelsMap = new Map()
+  const users: UsersMap = new Map()
 
   for (const file of files) {
     handleLeaderboard({

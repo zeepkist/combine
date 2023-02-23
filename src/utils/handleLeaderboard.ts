@@ -2,11 +2,11 @@ import { readFileSync } from 'node:fs'
 
 import { parse } from 'csv-parse/sync'
 
-import { Data, Record, User } from '../types.js'
+import { LevelsMap, RawRecord, UsersMap } from '../types.js'
 
 interface Properties {
-  levels: Map<string, Data[]>
-  users: Map<string, User>
+  levels: LevelsMap
+  users: UsersMap
   path: string
   file: string
 }
@@ -21,7 +21,7 @@ export const handleLeaderboard = ({
   const name = file.slice(35).split('-')[0]
 
   const fileData = readFileSync(`${path}/${file}`, 'utf8')
-  const records: Record[] = parse(fileData, {
+  const records: RawRecord[] = parse(fileData, {
     columns: true,
     skip_empty_lines: true
   })

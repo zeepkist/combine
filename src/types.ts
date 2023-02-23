@@ -41,10 +41,14 @@ export interface Event {
 }
 
 export interface Metadata {
-  [key: string]: {
-    name: string
-    workshopId: string
+  events?: {
+    [key: string]: {
+      name: string
+      workshopId: string
+    }
   }
+  points?: number[]
+  finishPoints?: number
 }
 
 export type LevelsMap = Map<string, UserLevelStandingMap[]>

@@ -18,7 +18,7 @@ export const handleEvents = (
   }
 
   for (const event of events) {
-    const { levels, users } = handleEvent(`${input}/${event}`)
+    const { levels, users } = handleEvent(`${input}/${event}`, metadata)
 
     for (const [steamId, user] of users) {
       const seasonUser = seasonUsers.get(steamId)

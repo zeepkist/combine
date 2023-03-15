@@ -1,4 +1,4 @@
-# Zeepkist Super League
+# Zeepkist Leaderboard Combiner
 
 Combines leaderboard data from the monthly Zeepkist Super League (ZSL) events into a single dataset per event.
 

@@ -15,10 +15,17 @@ export const handleSeasons = (
   }
 
   for (const season of seasons) {
+    const inputPath = `${input}/${season}`
+    const outputPath = `${output}/${season}`
+
+    if (!existsSync(outputPath)) {
+      mkdirSync(outputPath)
+    }
+
     const { metadata } = handleEvents(
-      readdirSync(`${input}/${season}`),
-      `${input}/${season}`,
-      `${output}/${season}`
+      readdirSync(inputPath),
+      inputPath,
+      outputPath
     )
     seasonMetadata.set(season, metadata)
   }

@@ -20,7 +20,7 @@ Open the logger config file (`Zeepkist/BepInEx/config/net.tnrd.zeepkist.leaderbo
 
 ```conf
 [Formatting]
-Filename = %Date:yyyyMMddTHHmmss%_%LevelUid%_%Name%.csv
+Filename = %Date:yyyyMMddTHHmmss%_%LevelUid%_Xw==_%Name%.csv
 Entry = %SteamId%,%Username%,%Time%,%ZeepkistId%,%ColorId%,%HatId%
 ```
 

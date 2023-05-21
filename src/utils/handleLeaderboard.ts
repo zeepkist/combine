@@ -20,7 +20,7 @@ export const handleLeaderboard = ({
 }: Properties) => {
   // `uid` is the unique id of the level played. End of the UID is indicated by '_Xw==_' in the file name
   const uid = file.slice(16).split('_Xw==_')[0]
-  console.log(`uid: ${uid}`)
+  console.log(`Processing ${uid}`)
 
   const fileData = readFileSync(`${path}/${file}`, 'utf8')
   const records: RawRecord[] = parse(fileData, {

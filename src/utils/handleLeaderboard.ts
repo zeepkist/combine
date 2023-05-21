@@ -18,8 +18,9 @@ export const handleLeaderboard = ({
   path,
   file
 }: Properties) => {
-  // `name` is the author of the level played
-  const name = file.slice(35).split('-')[0]
+  // `uid` is the unique id of the level played. End of the UID is indicated by '_Xw==_' in the file name
+  const uid = file.slice(16).split('_Xw==_')[0]
+  console.log(`Processing ${uid}`)
 
   const fileData = readFileSync(`${path}/${file}`, 'utf8')
   const records: RawRecord[] = parse(fileData, {
@@ -35,14 +36,14 @@ export const handleLeaderboard = ({
       totalPoints: 0
     })
 
-    const level = levels.get(name)
+    const level = levels.get(uid)
     if (level) {
       level.push({
         steamId: record.SteamId,
         time: Number(record.Time)
       })
     } else {
-      levels.set(name, [
+      levels.set(uid, [
         {
           steamId: record.SteamId,
           time: Number(record.Time)

@@ -27,5 +27,7 @@ export const handleEvent = (path: string, metadata: Metadata) => {
     })
   }
 
+  console.log(`Finished processing ${path}`)
+
   return { levels, users }
 }

@@ -72,7 +72,7 @@ One or more CSV leaderboard logs in the `input` folder
 
 ```text
 Input Folder
- ├── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+ ├── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_Xw==_RoomName.csv
  ├── 2021-01-01T12:00:00_1234567890_Example Level 2.csv
  └── 2021-01-01T12:00:00_1234567890_Example Level 3.csv
 ```
@@ -84,9 +84,9 @@ One or more folders in the `input` folder each containing one or more CSV leader
 ```text
 Input Folder
    ├── Example Event 1
-   │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+   │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_Xw==_RoomName.csv
    └── Example Event 2
-      └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+      └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_Xw==_RoomName.csv
 ```
 
 ### Multiple Seasons
@@ -97,14 +97,14 @@ One or more folders in the `input` folder each containing one or more events (se
 Input Folder
    ├── Season 1
    │   ├── Example Event 1
-   │   │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+   │   │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_Xw==_RoomName.csv
    │   └── Example Event 2
-   │      └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+   │      └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_Xw==_RoomName.csv
    └── Season 2
       ├── Example Event 1
-      │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+      │   └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_Xw==_RoomName.csv
       └── Example Event 2
-         └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_RoomName.csv
+         └── 20221204T180734_18112022-104248521-AuthorName-481758454581-1683_Xw==_RoomName.csv
 ```
 
 ## Output File Structure

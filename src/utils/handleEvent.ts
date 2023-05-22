@@ -20,11 +20,24 @@ export const handleEvent = (path: string, metadata: Metadata) => {
   const points = metadata.points ?? pointsDistribution
   const finishPoints = metadata.finishPoints ?? 1
 
-  for (const [, data] of levels) {
-    data.sort((a, b) => a.time - b.time)
-    data.map((item, index) => {
+  for (const [levelUid, record] of levels) {
+    const steamIds = new Set<string>()
+    const deduplicatedRecords = record
+      .filter(user => {
+        if (steamIds.has(user.steamId)) {
+          return false
+        }
+
+        steamIds.add(user.steamId)
+        return true
+      })
+      .sort((a, b) => a.time - b.time)
+
+    for (const [index, item] of deduplicatedRecords.entries()) {
       item.points = points[index] || finishPoints
-    })
+    }
+
+    levels.set(levelUid, deduplicatedRecords)
   }
 
   console.log(`Finished processing ${path}`)

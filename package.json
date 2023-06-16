@@ -24,7 +24,7 @@
     "coverage": "c8 ava"
   },
   "dependencies": {
-    "commander": "~10.0.0",
+    "commander": "~11.0.0",
     "csv-parse": "~5.4.0"
   },
   "devDependencies": {

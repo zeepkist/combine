@@ -1158,7 +1158,7 @@ __metadata:
     "@types/node": ~20.10.0
     "@typescript-eslint/eslint-plugin": ~6.13.0
     "@typescript-eslint/parser": ~6.13.0
-    ava: ~6.0.0
+    ava: ~6.1.0
     c8: ~8.0.0
     commander: ~11.1.0
     csv-parse: ~5.5.0
@@ -1529,9 +1529,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ava@npm:~6.0.0":
-  version: 6.0.0
-  resolution: "ava@npm:6.0.0"
+"ava@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "ava@npm:6.1.0"
   dependencies:
     "@vercel/nft": ^0.24.4
     acorn: ^8.11.2
@@ -1580,7 +1580,7 @@ __metadata:
       optional: true
   bin:
     ava: entrypoints/cli.mjs
-  checksum: 41e8b3dcaf3122c7ab16aec93dd787c4334b374318c591a34e2f9cf788d2db940a94ececf0289d483d4a6c6ef05f06412989b151e282f6ae5d24d8943fda2a12
+  checksum: 60f98360d647f033d1ff24bbd091db98f2dac5b86bb0cf8418d9880068eb6391fb10b32256a6d790d8d1ba75b003ba98e52293101a17a2a79bd9081e2a4ecb3b
   languageName: node
   linkType: hard
 

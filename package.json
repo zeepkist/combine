@@ -58,13 +58,12 @@
   },
   "ava": {
     "utilizeParallelBuilds": true,
-    "extensions": {
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--loader",
-      "tsx"
-    ]
+    "typescript": {
+      "rewritePaths": {
+        "src/": "dist/"
+      },
+      "compile": "tsc"
+    }
   },
   "c8": {
     "all": true,

@@ -62,7 +62,7 @@
       "rewritePaths": {
         "src/": "dist/"
       },
-      "compile": false
+      "compile": "tsc"
     }
   },
   "c8": {

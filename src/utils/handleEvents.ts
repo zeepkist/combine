@@ -86,14 +86,15 @@ export const handleEvents = (
     JSON.stringify(
       [...seasonUsers]
         .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
-        .map(
-          ([steamId, user]) =>
-            ({
-              ...user,
-              steamId,
-              totalPoints: Number(user.totalPoints.toFixed(2))
-            } as UserStanding)
-        ),
+        .map(([steamId, user]) => {
+          const totalPoints = Number((user.totalPoints * 100).toFixed(0))
+
+          return {
+            ...user,
+            steamId,
+            totalPoints
+          } as UserStanding
+        }),
       undefined,
       2
     )

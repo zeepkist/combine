@@ -840,9 +840,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^10.0.0, @semantic-release/github@npm:~10.1.0":
-  version: 10.1.7
-  resolution: "@semantic-release/github@npm:10.1.7"
+"@semantic-release/github@npm:^10.0.0, @semantic-release/github@npm:~10.3.0":
+  version: 10.3.0
+  resolution: "@semantic-release/github@npm:10.3.0"
   dependencies:
     "@octokit/core": ^6.0.0
     "@octokit/plugin-paginate-rest": ^11.0.0
@@ -862,7 +862,7 @@ __metadata:
     url-join: ^5.0.0
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: 507f2e2706951e13990c0c5b9962578decea7e78aba3a72c6d3cb846f2e2134c5a5c1780a321630940870609e8a0701db20768d8853736d96dfb11e80601ca26
+  checksum: 73a267c23d395e1563404a3390a513305e5eda2f16ae6127da97a42eb44ffbdcbd7c5ea23cde79346e4fffdccbd0cb6c6e4a2f5ac404601c2206ae545d294a15
   languageName: node
   linkType: hard
 
@@ -1229,7 +1229,7 @@ __metadata:
     "@rushstack/eslint-patch": ~1.10.0
     "@semantic-release/changelog": ~6.0.2
     "@semantic-release/commit-analyzer": ~13.0.0
-    "@semantic-release/github": ~10.1.0
+    "@semantic-release/github": ~10.3.0
     "@semantic-release/npm": ~12.0.0
     "@semantic-release/release-notes-generator": ~14.0.0
     "@types/node": ~22.5.0

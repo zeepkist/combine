@@ -29,19 +29,22 @@ export const handleEvents = (
         seasonUsers.set(steamId, {
           username: user.username,
           team: user.team,
-          totalPoints: 0
+          totalPoints: 0,
+          pointsPerRound: []
         })
       }
     }
 
     for (const [, data] of levels) {
       for (const item of data) {
+        const seasonUser = seasonUsers.get(item.steamId)
         const user = users.get(item.steamId)
+
         if (user) {
           user.totalPoints += item.points ?? 0
+          user.pointsPerRound.push(item.points ?? 0)
         }
 
-        const seasonUser = seasonUsers.get(item.steamId)
         item.username = seasonUser?.username ?? user?.username ?? ''
         item.team = seasonUser?.team ?? user?.team ?? undefined
       }
@@ -49,8 +52,17 @@ export const handleEvents = (
 
     for (const [steamId, user] of users) {
       const seasonUser = seasonUsers.get(steamId)
+
       if (seasonUser) {
-        seasonUser.totalPoints += user.totalPoints / levels.size
+        const bestOf = metadata.bestOf ?? Number.MAX_SAFE_INTEGER
+
+        // add points for each round separately
+        seasonUser.pointsPerRound.push(Math.round((user.totalPoints / levels.size) * 10))
+
+        const sortedPoints = [...seasonUser.pointsPerRound].sort((a, b) => b - a);
+
+        // calculate total points for the user (optionally based on X best point-scoring rounds if bestOf is set in metadata.json)
+        seasonUser.totalPoints = sortedPoints.slice(0, bestOf).reduce((acc, point) => acc + point, 0);
       }
     }
 
@@ -87,7 +99,7 @@ export const handleEvents = (
       [...seasonUsers]
         .sort((a, b) => b[1].totalPoints - a[1].totalPoints)
         .map(([steamId, user]) => {
-          const totalPoints = Number((user.totalPoints * 100).toFixed(0))
+          const totalPoints = Number((user.totalPoints).toFixed(0))
 
           return {
             ...user,

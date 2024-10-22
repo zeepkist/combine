@@ -15,6 +15,7 @@ interface User {
 
 export interface UserStanding extends User {
   totalPoints: number
+  pointsPerRound: number[]
 }
 
 export type UserStandingMap = Omit<UserStanding, 'steamId'>
@@ -49,6 +50,7 @@ export interface Metadata {
   }
   points?: number[]
   finishPoints?: number
+  bestOf?: number
 }
 
 export type LevelsMap = Map<string, UserLevelStandingMap[]>

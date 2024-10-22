@@ -33,7 +33,8 @@ export const handleLeaderboard = ({
     users.set(record.SteamId, {
       username,
       team,
-      totalPoints: 0
+      totalPoints: 0,
+      pointsPerRound: [],
     })
 
     const level = levels.get(uid)

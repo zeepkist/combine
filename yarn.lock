@@ -861,7 +861,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^11.0.0":
+"@semantic-release/github@npm:^11.0.0, @semantic-release/github@npm:~11.0.0":
   version: 11.0.0
   resolution: "@semantic-release/github@npm:11.0.0"
   dependencies:
@@ -884,32 +884,6 @@ __metadata:
   peerDependencies:
     semantic-release: ">=24.1.0"
   checksum: 044718a41f9888dd621e89959bb5bad9db772aa317fdc003bbd1b7dad895082c584b3409a7fc8c00071229b272718d303a006e72c7782c5dfb54313515b0b1f4
-  languageName: node
-  linkType: hard
-
-"@semantic-release/github@npm:~10.3.0":
-  version: 10.3.5
-  resolution: "@semantic-release/github@npm:10.3.5"
-  dependencies:
-    "@octokit/core": ^6.0.0
-    "@octokit/plugin-paginate-rest": ^11.0.0
-    "@octokit/plugin-retry": ^7.0.0
-    "@octokit/plugin-throttling": ^9.0.0
-    "@semantic-release/error": ^4.0.0
-    aggregate-error: ^5.0.0
-    debug: ^4.3.4
-    dir-glob: ^3.0.1
-    globby: ^14.0.0
-    http-proxy-agent: ^7.0.0
-    https-proxy-agent: ^7.0.0
-    issue-parser: ^7.0.0
-    lodash-es: ^4.17.21
-    mime: ^4.0.0
-    p-filter: ^4.0.0
-    url-join: ^5.0.0
-  peerDependencies:
-    semantic-release: ">=20.1.0"
-  checksum: f9150324da1b8656f4317e0fa4371971975eac159e0c6c49cb15d6326e9c4d63f894a8b5fd57a7fa1f7be726ff5874375b2a71c3d5f8146c75e64f8c1f9081f7
   languageName: node
   linkType: hard
 
@@ -1317,7 +1291,7 @@ __metadata:
     "@rushstack/eslint-patch": ~1.10.0
     "@semantic-release/changelog": ~6.0.2
     "@semantic-release/commit-analyzer": ~13.0.0
-    "@semantic-release/github": ~10.3.0
+    "@semantic-release/github": ~11.0.0
     "@semantic-release/npm": ~12.0.0
     "@semantic-release/release-notes-generator": ~14.0.0
     "@types/node": ~22.7.0

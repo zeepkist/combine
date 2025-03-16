@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@ava/typescript": "~5.0.0",
-    "@rushstack/eslint-patch": "~1.10.0",
+    "@rushstack/eslint-patch": "~1.11.0",
     "@semantic-release/changelog": "~6.0.2",
     "@semantic-release/commit-analyzer": "~13.0.0",
     "@semantic-release/github": "~11.0.0",

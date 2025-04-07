@@ -1032,12 +1032,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:~22.13.0":
-  version: 22.13.7
-  resolution: "@types/node@npm:22.13.7"
+"@types/node@npm:~22.14.0":
+  version: 22.14.0
+  resolution: "@types/node@npm:22.14.0"
   dependencies:
-    undici-types: ~6.20.0
-  checksum: 8849203f3b54dba593c9d1766b63283ff247602ced6f5234ae83962fd2cf4a7db1235d1513890630152a00cc4c40a535cbd3d5daa8a4457678fbaa0d54a9c6c3
+    undici-types: ~6.21.0
+  checksum: 8bfae1d3c428b122d23750690bdc5b8295a53949823563ec60654a24ece98bde4fc0d2b5f06ddc6def6f01a08dfe62cece7c93e60964b74f736145dad5ee1302
   languageName: node
   linkType: hard
 
@@ -1218,7 +1218,7 @@ __metadata:
     "@semantic-release/github": ~11.0.0
     "@semantic-release/npm": ~12.0.0
     "@semantic-release/release-notes-generator": ~14.0.0
-    "@types/node": ~22.13.0
+    "@types/node": ~22.14.0
     "@typescript-eslint/eslint-plugin": ~6.21.0
     "@typescript-eslint/parser": ~6.21.0
     ava: ~6.2.0
@@ -7296,10 +7296,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.20.0":
-  version: 6.20.0
-  resolution: "undici-types@npm:6.20.0"
-  checksum: b7bc50f012dc6afbcce56c9fd62d7e86b20a62ff21f12b7b5cbf1973b9578d90f22a9c7fe50e638e96905d33893bf2f9f16d98929c4673c2480de05c6c96ea8b
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 46331c7d6016bf85b3e8f20c159d62f5ae471aba1eb3dc52fff35a0259d58dcc7d592d4cc4f00c5f9243fa738a11cfa48bd20203040d4a9e6bc25e807fab7ab3
   languageName: node
   linkType: hard
 

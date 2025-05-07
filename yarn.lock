@@ -350,7 +350,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/node-pre-gyp@npm:^2.0.0-rc.0":
+"@mapbox/node-pre-gyp@npm:^2.0.0":
   version: 2.0.0
   resolution: "@mapbox/node-pre-gyp@npm:2.0.0"
   dependencies:
@@ -1185,25 +1185,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:^0.27.5":
-  version: 0.27.10
-  resolution: "@vercel/nft@npm:0.27.10"
+"@vercel/nft@npm:^0.29.2":
+  version: 0.29.2
+  resolution: "@vercel/nft@npm:0.29.2"
   dependencies:
-    "@mapbox/node-pre-gyp": ^2.0.0-rc.0
+    "@mapbox/node-pre-gyp": ^2.0.0
     "@rollup/pluginutils": ^5.1.3
     acorn: ^8.6.0
     acorn-import-attributes: ^1.9.5
     async-sema: ^3.1.1
     bindings: ^1.4.0
     estree-walker: 2.0.2
-    glob: ^7.1.3
+    glob: ^10.4.5
     graceful-fs: ^4.2.9
     node-gyp-build: ^4.2.2
     picomatch: ^4.0.2
     resolve-from: ^5.0.0
   bin:
     nft: out/cli.js
-  checksum: 6f65b14a3669f6725a42b4ca3c8b1a9d0ce9d72c642da5783d311ff01215be4e8ea47f5ec8837b21a8f51c2553774f2963efa03e6fb8c6961178135eb9693e12
+  checksum: 6d86b5fba9d50b39e37f3ecfdb49d9f5c0fff20d36b7364827c94006953255d252a52a647edc34f380bfc1c1d1660a2f84e3bfa4542eb08a6fdb3f54d1a70bbc
   languageName: node
   linkType: hard
 
@@ -1221,7 +1221,7 @@ __metadata:
     "@types/node": ~22.15.0
     "@typescript-eslint/eslint-plugin": ~6.21.0
     "@typescript-eslint/parser": ~6.21.0
-    ava: ~6.2.0
+    ava: ~6.3.0
     c8: ~10.1.0
     commander: ~12.1.0
     csv-parse: ~5.6.0
@@ -1277,7 +1277,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.11.0, acorn@npm:^8.13.0, acorn@npm:^8.6.0, acorn@npm:^8.9.0":
+"acorn@npm:^8.11.0, acorn@npm:^8.14.1, acorn@npm:^8.6.0, acorn@npm:^8.9.0":
   version: 8.14.1
   resolution: "acorn@npm:8.14.1"
   bin:
@@ -1544,43 +1544,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ava@npm:~6.2.0":
-  version: 6.2.0
-  resolution: "ava@npm:6.2.0"
+"ava@npm:~6.3.0":
+  version: 6.3.0
+  resolution: "ava@npm:6.3.0"
   dependencies:
-    "@vercel/nft": ^0.27.5
-    acorn: ^8.13.0
+    "@vercel/nft": ^0.29.2
+    acorn: ^8.14.1
     acorn-walk: ^8.3.4
     ansi-styles: ^6.2.1
     arrgv: ^1.0.2
     arrify: ^3.0.0
     callsites: ^4.2.0
-    cbor: ^9.0.2
-    chalk: ^5.3.0
+    cbor: ^10.0.3
+    chalk: ^5.4.1
     chunkd: ^2.0.1
-    ci-info: ^4.0.0
+    ci-info: ^4.2.0
     ci-parallel-vars: ^1.0.1
     cli-truncate: ^4.0.0
     code-excerpt: ^4.0.0
     common-path-prefix: ^3.0.0
     concordance: ^5.0.4
     currently-unhandled: ^0.4.1
-    debug: ^4.3.7
-    emittery: ^1.0.3
+    debug: ^4.4.0
+    emittery: ^1.1.0
     figures: ^6.1.0
-    globby: ^14.0.2
+    globby: ^14.1.0
     ignore-by-default: ^2.1.0
     indent-string: ^5.0.0
     is-plain-object: ^5.0.0
     is-promise: ^4.0.0
     matcher: ^5.0.0
-    memoize: ^10.0.0
+    memoize: ^10.1.0
     ms: ^2.1.3
-    p-map: ^7.0.2
+    p-map: ^7.0.3
     package-config: ^5.0.0
     picomatch: ^4.0.2
     plur: ^5.1.0
-    pretty-ms: ^9.1.0
+    pretty-ms: ^9.2.0
     resolve-cwd: ^3.0.0
     stack-utils: ^2.0.6
     strip-ansi: ^7.1.0
@@ -1595,7 +1595,7 @@ __metadata:
       optional: true
   bin:
     ava: entrypoints/cli.mjs
-  checksum: d2cffd13c16f36258f05ec838dbb82215e1e9f9ad3271e5c18b7be8c91f9a1eae77c286e1d0f172a7e76f5f569b265afba05d360ff0169dc29f62669225a7f70
+  checksum: b73bcf4c8ca2c0191b926c1922179912e93dbdf3179b11c9ba8ebcfdae04f7148c3194aa452f285fec8e652293da6ff882a312f7545133cd8bd19b6c71c3a8b0
   languageName: node
   linkType: hard
 
@@ -1792,12 +1792,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cbor@npm:^9.0.2":
-  version: 9.0.2
-  resolution: "cbor@npm:9.0.2"
+"cbor@npm:^10.0.3":
+  version: 10.0.3
+  resolution: "cbor@npm:10.0.3"
   dependencies:
-    nofilter: ^3.1.0
-  checksum: 925edae7bf964be5a26dba1b7ba6311ac12b6a66234dc958958997a0576cdc740632dc19852a5b84d8a75101936bea1fe122dc22539d6e11f4539c731853ba2e
+    nofilter: ^3.0.2
+  checksum: 8bb589fae51a43b041f645c64ee5d8c0da77ed67ffaa5b1087f1bd5aac28714fe67b6865054148335d62bff979c44139767b47fdb6033b0f7b30f06d9923c43e
   languageName: node
   linkType: hard
 
@@ -1864,7 +1864,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ci-info@npm:^4.0.0, ci-info@npm:^4.1.0":
+"ci-info@npm:^4.0.0, ci-info@npm:^4.1.0, ci-info@npm:^4.2.0":
   version: 4.2.0
   resolution: "ci-info@npm:4.2.0"
   checksum: 0e3726721526f54c5b17cf44ab2ed69b842c756bcb4d2b26ce279e595a80a856aec9fb38a2986a2baca3de73d15895f3a01d2771c4aad93c898aae7e3ca0ceb1
@@ -2275,7 +2275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.3.6, debug@npm:^4.3.7":
+"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.3.6, debug@npm:^4.4.0":
   version: 4.4.0
   resolution: "debug@npm:4.4.0"
   dependencies:
@@ -2409,7 +2409,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emittery@npm:^1.0.3":
+"emittery@npm:^1.1.0":
   version: 1.1.0
   resolution: "emittery@npm:1.1.0"
   checksum: 299a14f656ae3fe244fae2a8755f11ddeb9b098885c1c4ad9480bed70f4e89b785dc62edbb73cfc238892bdc1ac7ad42ace16c06dc1b82ec3283b6d9167bcbd3
@@ -3503,7 +3503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^14.0.0, globby@npm:^14.0.2":
+"globby@npm:^14.0.0, globby@npm:^14.1.0":
   version: 14.1.0
   resolution: "globby@npm:14.1.0"
   dependencies:
@@ -4812,7 +4812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"memoize@npm:^10.0.0":
+"memoize@npm:^10.1.0":
   version: 10.1.0
   resolution: "memoize@npm:10.1.0"
   dependencies:
@@ -5137,7 +5137,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nofilter@npm:^3.1.0":
+"nofilter@npm:^3.0.2":
   version: 3.1.0
   resolution: "nofilter@npm:3.1.0"
   checksum: 58aa85a5b4b35cbb6e42de8a8591c5e338061edc9f3e7286f2c335e9e9b9b8fa7c335ae45daa8a1f3433164dc0b9a3d187fa96f9516e04a17a1f9ce722becc4f
@@ -5591,7 +5591,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-map@npm:^7.0.1, p-map@npm:^7.0.2":
+"p-map@npm:^7.0.1, p-map@npm:^7.0.2, p-map@npm:^7.0.3":
   version: 7.0.3
   resolution: "p-map@npm:7.0.3"
   checksum: 8c92d533acf82f0d12f7e196edccff773f384098bbb048acdd55a08778ce4fc8889d8f1bde72969487bd96f9c63212698d79744c20bedfce36c5b00b46d369f8
@@ -5935,7 +5935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-ms@npm:^9.0.0, pretty-ms@npm:^9.1.0":
+"pretty-ms@npm:^9.0.0, pretty-ms@npm:^9.2.0":
   version: 9.2.0
   resolution: "pretty-ms@npm:9.2.0"
   dependencies:

@@ -1228,7 +1228,7 @@ __metadata:
     eslint: ~8.57.0
     eslint-config-prettier: ~9.1.0
     eslint-plugin-import: ~2.31.0
-    eslint-plugin-prettier: ~5.3.0
+    eslint-plugin-prettier: ~5.4.0
     eslint-plugin-simple-import-sort: ~10.0.0
     eslint-plugin-unicorn: ~49.0.0
     prettier: ~3.5.0
@@ -2791,9 +2791,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:~5.3.0":
-  version: 5.3.1
-  resolution: "eslint-plugin-prettier@npm:5.3.1"
+"eslint-plugin-prettier@npm:~5.4.0":
+  version: 5.4.0
+  resolution: "eslint-plugin-prettier@npm:5.4.0"
   dependencies:
     prettier-linter-helpers: ^1.0.0
     synckit: ^0.11.0
@@ -2807,7 +2807,7 @@ __metadata:
       optional: true
     eslint-config-prettier:
       optional: true
-  checksum: 2ac5e617b143050cb559a20628823aa4ffa7a31ba733c299fbb76c697985c3d2f164eda9729678b2303ab38529cfd1c80497806f883f4a4752cb6be1422583eb
+  checksum: 1d71d4fb42b8f9654232c6f9c6805549f7e9da6ee3207069dac122ab1c55eae90a0840f5c109e821e3a5145ec223dbbdfa7cfd3c3a28267316d08d55d5812e21
   languageName: node
   linkType: hard
 

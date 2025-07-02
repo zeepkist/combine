@@ -5,13 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@ava/typescript@npm:~5.0.0":
-  version: 5.0.0
-  resolution: "@ava/typescript@npm:5.0.0"
+"@ava/typescript@npm:~6.0.0":
+  version: 6.0.0
+  resolution: "@ava/typescript@npm:6.0.0"
   dependencies:
     escape-string-regexp: ^5.0.0
-    execa: ^8.0.1
-  checksum: 663087dba37c0d1d9771761464df45a32c4e9c378fbfccad8810c86d5a89b84f4a9bc2bdd8f20a48b3123a5782bc4a9833291c764685ca193118ae8ca7c586d1
+    execa: ^9.6.0
+  checksum: a76c5ef96d3d748604f77a45c5d3c0c3e04f5f2cf60e9dedaa10302113895d9a7b049a01307770d61732794339cd0db7b73b8b8721d124e186241627ad0c697e
   languageName: node
   linkType: hard
 
@@ -1211,7 +1211,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zeepkist/combine@workspace:."
   dependencies:
-    "@ava/typescript": ~5.0.0
+    "@ava/typescript": ~6.0.0
     "@rushstack/eslint-patch": ~1.12.0
     "@semantic-release/changelog": ~6.0.2
     "@semantic-release/commit-analyzer": ~13.0.0
@@ -2974,7 +2974,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^8.0.0, execa@npm:^8.0.1":
+"execa@npm:^8.0.0":
   version: 8.0.1
   resolution: "execa@npm:8.0.1"
   dependencies:
@@ -2991,23 +2991,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^9.0.0":
-  version: 9.5.2
-  resolution: "execa@npm:9.5.2"
+"execa@npm:^9.0.0, execa@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "execa@npm:9.6.0"
   dependencies:
     "@sindresorhus/merge-streams": ^4.0.0
-    cross-spawn: ^7.0.3
+    cross-spawn: ^7.0.6
     figures: ^6.1.0
     get-stream: ^9.0.0
-    human-signals: ^8.0.0
+    human-signals: ^8.0.1
     is-plain-obj: ^4.1.0
     is-stream: ^4.0.1
     npm-run-path: ^6.0.0
-    pretty-ms: ^9.0.0
+    pretty-ms: ^9.2.0
     signal-exit: ^4.1.0
     strip-final-newline: ^4.0.0
-    yoctocolors: ^2.0.0
-  checksum: dbe18d07ef58d88116c94450e3f8422ad1ce498bdbfed51b0ed0e7c219d7842d2bccab36b1c0d61d58e99a944cf3c5f60ba08e6a3c5dfe51e1d6e84b0b4f82aa
+    yoctocolors: ^2.1.1
+  checksum: 4b63d7c4317a41ad16201f7c74d963c4060b2affaac32ea69498e26c758df0d8447891a2bc4a185e9ee7aad82cff8684a8b0420ed3addaa25a1c65663a97335d
   languageName: node
   linkType: hard
 
@@ -3712,7 +3712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"human-signals@npm:^8.0.0":
+"human-signals@npm:^8.0.1":
   version: 8.0.1
   resolution: "human-signals@npm:8.0.1"
   checksum: 0065305f01ccbf3adb6f4240c8a5d8b5c0f516eb074dc862409f9e1058531c29768be154fcfaff919ac110b47cfb3628e62de10dc8c8ffb61daecb4f53e01137
@@ -5947,7 +5947,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-ms@npm:^9.0.0, pretty-ms@npm:^9.2.0":
+"pretty-ms@npm:^9.2.0":
   version: 9.2.0
   resolution: "pretty-ms@npm:9.2.0"
   dependencies:
@@ -7687,7 +7687,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yoctocolors@npm:^2.0.0":
+"yoctocolors@npm:^2.1.1":
   version: 2.1.1
   resolution: "yoctocolors@npm:2.1.1"
   checksum: 563fbec88bce9716d1044bc98c96c329e1d7a7c503e6f1af68f1ff914adc3ba55ce953c871395e2efecad329f85f1632f51a99c362032940321ff80c42a6f74d

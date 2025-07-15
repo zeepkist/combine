@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "commander": "~12.1.0",
-    "csv-parse": "~5.6.0"
+    "csv-parse": "~6.0.0"
   },
   "devDependencies": {
     "@ava/typescript": "~6.0.0",

@@ -895,9 +895,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^14.0.0-beta.1, @semantic-release/release-notes-generator@npm:~14.0.0":
-  version: 14.0.3
-  resolution: "@semantic-release/release-notes-generator@npm:14.0.3"
+"@semantic-release/release-notes-generator@npm:^14.0.0-beta.1, @semantic-release/release-notes-generator@npm:~14.1.0":
+  version: 14.1.0
+  resolution: "@semantic-release/release-notes-generator@npm:14.1.0"
   dependencies:
     conventional-changelog-angular: ^8.0.0
     conventional-changelog-writer: ^8.0.0
@@ -911,7 +911,7 @@ __metadata:
     read-package-up: ^11.0.0
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: bb9b0913e17a449e2a495aeed12ee4d5d116c0876a2420f8c3308d4f89b279c64f78f79f3b7e9812f84f27dd4abba1009bb0d3418ab559ddb1665a0b211d63d7
+  checksum: 3abc52cd45e5822af28ff7b4ef68730ff82e5d6177de52de3197df899395489a49bddc3fe2823cd9ec95060a2c943940e8d19e81269a6b94c9b9253d7bce9fa3
   languageName: node
   linkType: hard
 
@@ -1224,7 +1224,7 @@ __metadata:
     "@semantic-release/commit-analyzer": ~13.0.0
     "@semantic-release/github": ~11.0.0
     "@semantic-release/npm": ~12.0.0
-    "@semantic-release/release-notes-generator": ~14.0.0
+    "@semantic-release/release-notes-generator": ~14.1.0
     "@types/node": ~24.3.0
     "@typescript-eslint/eslint-plugin": ~6.21.0
     "@typescript-eslint/parser": ~6.21.0

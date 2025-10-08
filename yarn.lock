@@ -786,10 +786,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/eslint-patch@npm:~1.12.0":
-  version: 1.12.0
-  resolution: "@rushstack/eslint-patch@npm:1.12.0"
-  checksum: 186788a93e2f141f622696091a593727fe7964d4925236a308e29754e29dcb182377f8d292ae954d227fb0574433863af055c0156593a40fd525e88b76e891ec
+"@rushstack/eslint-patch@npm:~1.13.0":
+  version: 1.13.0
+  resolution: "@rushstack/eslint-patch@npm:1.13.0"
+  checksum: a99be6ce559cbfb504516690e1f94088fe9ea5ac8f02ab6bd95c98a3105e6c55d34025c49a1a6edf358cf431adcdcd220c4d06daf0569192ccb2e1ef9ab783b4
   languageName: node
   linkType: hard
 
@@ -1219,7 +1219,7 @@ __metadata:
   resolution: "@zeepkist/combine@workspace:."
   dependencies:
     "@ava/typescript": ~6.0.0
-    "@rushstack/eslint-patch": ~1.12.0
+    "@rushstack/eslint-patch": ~1.13.0
     "@semantic-release/changelog": ~6.0.2
     "@semantic-release/commit-analyzer": ~13.0.0
     "@semantic-release/github": ~11.0.0

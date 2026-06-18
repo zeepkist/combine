@@ -83,6 +83,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cto.af/wtf8@npm:0.0.5":
+  version: 0.0.5
+  resolution: "@cto.af/wtf8@npm:0.0.5"
+  checksum: fde1ecc3c8281f681b6aa36f0dac5045194498b90ae05878848c51271619f019c97b5a0c62ef932a9d14d7d25d209da74a8b8a62329b65026cbe54751a4ca336
+  languageName: node
+  linkType: hard
+
 "@esbuild/aix-ppc64@npm:0.28.1":
   version: 0.28.1
   resolution: "@esbuild/aix-ppc64@npm:0.28.1"
@@ -1216,9 +1223,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:^1.3.2":
-  version: 1.5.0
-  resolution: "@vercel/nft@npm:1.5.0"
+"@vercel/nft@npm:^1.5.0":
+  version: 1.10.2
+  resolution: "@vercel/nft@npm:1.10.2"
   dependencies:
     "@mapbox/node-pre-gyp": ^2.0.0
     "@rollup/pluginutils": ^5.1.3
@@ -1234,7 +1241,7 @@ __metadata:
     resolve-from: ^5.0.0
   bin:
     nft: out/cli.js
-  checksum: 9ed7d45e60bd60d1047f45de6b4f3adbb7ec3dde9cbd980f014a516639246d7d07e504432a31659d080a8fa87a1ec63a901b41362f85be0318999293927c19ef
+  checksum: 7cd3a1ba02a8401c4d5ce372a6e2320941a3d82ac0112efa9808b7bae4c27bed34a2961cf75aae308ab040e82a5abd5d260473d421502410029dc45188721945
   languageName: node
   linkType: hard
 
@@ -1252,7 +1259,7 @@ __metadata:
     "@types/node": ~25.9.0
     "@typescript-eslint/eslint-plugin": ~6.21.0
     "@typescript-eslint/parser": ~6.21.0
-    ava: ~7.0.0
+    ava: ~8.0.0
     c8: ~11.0.0
     commander: ~15.0.0
     csv-parse: ~6.2.0
@@ -1591,48 +1598,49 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ava@npm:~7.0.0":
-  version: 7.0.0
-  resolution: "ava@npm:7.0.0"
+"ava@npm:~8.0.0":
+  version: 8.0.1
+  resolution: "ava@npm:8.0.1"
   dependencies:
-    "@vercel/nft": ^1.3.2
+    "@vercel/nft": ^1.5.0
     acorn: ^8.16.0
     acorn-walk: ^8.3.5
     ansi-styles: ^6.2.3
     arrgv: ^1.0.2
     arrify: ^3.0.0
     callsites: ^4.2.0
-    cbor: ^10.0.11
+    cbor2: ^2.3.0
     chalk: ^5.6.2
     chunkd: ^2.0.1
     ci-info: ^4.4.0
     ci-parallel-vars: ^1.0.1
-    cli-truncate: ^5.1.1
+    cli-truncate: ^6.0.0
     code-excerpt: ^4.0.0
     common-path-prefix: ^3.0.0
     concordance: ^5.0.4
     currently-unhandled: ^0.4.1
     debug: ^4.4.3
-    emittery: ^1.2.0
+    emittery: ^2.0.0
     figures: ^6.1.0
-    globby: ^16.1.1
+    globby: ^16.2.0
     ignore-by-default: ^2.1.0
     indent-string: ^5.0.0
     is-plain-object: ^5.0.0
     is-promise: ^4.0.0
     matcher: ^6.0.0
-    memoize: ^10.2.0
+    memoize: ^11.0.0
     ms: ^2.1.3
     p-map: ^7.0.4
     package-config: ^5.0.0
-    picomatch: ^4.0.3
+    picomatch: ^4.0.4
     plur: ^6.0.0
     pretty-ms: ^9.3.0
     resolve-cwd: ^3.0.0
+    slash: ^5.1.0
     stack-utils: ^2.0.6
     supertap: ^3.0.1
     temp-dir: ^3.0.0
-    write-file-atomic: ^7.0.0
+    write-file-atomic: ^7.0.1
     yargs: ^18.0.0
   peerDependencies:
     "@ava/typescript": "*"
@@ -1640,8 +1648,8 @@ __metadata:
     "@ava/typescript":
       optional: true
   bin:
-    ava: entrypoints/cli.mjs
-  checksum: b7e81ae41603ac6b6eb7c4b2dffa658c59c2bfc5abf29d44e91bde21f51ddb6c50b3d290daf0c112a74737efd199048f3aabbd06331f8fc93d588fa481fd365c
+    ava: entrypoints/cli.js
+  checksum: 36dfa15ab45654f226974d3fd08325f6b35b6b705e606c3209dab517290ef5f0837d59ced25b2e379faace05d9a9b151e77cfe40bf3d80e48c3e6ac66730fba6
   languageName: node
   linkType: hard
 
@@ -1852,12 +1860,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cbor@npm:^10.0.11":
-  version: 10.0.12
-  resolution: "cbor@npm:10.0.12"
+"cbor2@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "cbor2@npm:2.3.0"
   dependencies:
-    nofilter: ^3.0.2
-  checksum: a4d4f4d980d41b3ec11d980ccd3af644a6bd9c138802c6a861678c74251f214dee3ff4010c7a65fbeb6d3b3a6932c278bd42397e8938215521bf2b2c5fd74082
+    "@cto.af/wtf8": 0.0.5
+  checksum: 31715db38e181525347260601dbb6011a2a647d32a82540bda8951af548756c1ac9e05b03da5c35c3f5d65e1399f9f7fe37495afeac37850a78c0e09bae9297c
   languageName: node
   linkType: hard
 
@@ -1992,13 +2000,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:^5.1.1":
-  version: 5.2.0
-  resolution: "cli-truncate@npm:5.2.0"
+"cli-truncate@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "cli-truncate@npm:6.0.0"
   dependencies:
-    slice-ansi: ^8.0.0
+    slice-ansi: ^9.0.0
     string-width: ^8.2.0
-  checksum: b789b6c2caff1560259aedeb6aaafcf41167d478df418d718a8c92edd6bc5a0ece272b8fb7e7911fbd31cef7b1ac8a30f2b21d90c3174b55a018fe3f2604a137
+  checksum: 319fed1cbb65d0d86e8b943665ae86e459594b2fd6a441b491a7e9b2d518886c15b8b3f76c230a69bcb4e8b81bdeda8b700f340b97d64272e8f55ac34ab668ca
   languageName: node
   linkType: hard
 
@@ -2456,10 +2464,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emittery@npm:^1.2.0":
-  version: 1.2.1
-  resolution: "emittery@npm:1.2.1"
-  checksum: 49fe739730409fe1baedb1346f99a025879c9704e880d1da805c8f5f2f09b86a6b7387a5326840b86623d48dedb67dd9409f3ac78920f2224ab33b93161ed68a
+"emittery@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "emittery@npm:2.0.0"
+  checksum: bd55378298c0581f1d5cbff86ac798d23bb7aa6c4c79a6508a724e93c1090eece48fdfdd02115583b3074634fc22f0eaf6de9d4c311a56c92c8fe8c85dd91138
   languageName: node
   linkType: hard
 
@@ -3520,7 +3528,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^16.1.1":
+"globby@npm:^16.2.0":
   version: 16.2.0
   resolution: "globby@npm:16.2.0"
   dependencies:
@@ -4833,12 +4841,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"memoize@npm:^10.2.0":
-  version: 10.2.0
-  resolution: "memoize@npm:10.2.0"
+"memoize@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "memoize@npm:11.0.0"
   dependencies:
     mimic-function: ^5.0.1
-  checksum: a0377470ff33e18da95655adf06dc110acdf6f54890987d982430230f8547ac28552d2a9aa34ccd9d49b57f01f7514621382f4bd5a85b12fc5381370acb366ba
+  checksum: f87bee5ed882dba542e4823c1b86f6de1518a519a7123f5dbbdd0da3fdfafabf9a370a4281c178db1386814f7c50e309a4dc23f63d2d4d919806ca34ac61b54e
   languageName: node
   linkType: hard
 
@@ -5132,13 +5140,6 @@ __metadata:
   bin:
     node-gyp: bin/node-gyp.js
   checksum: b02e8776908a83f25b8df88f0b79c46b425f9b7f442ebe3c4a50b9820128c1b44df6b386214c73d509964995d820edbda94bb0c811b6b60a686231afb699acf7
-  languageName: node
-  linkType: hard
-
-"nofilter@npm:^3.0.2":
-  version: 3.1.0
-  resolution: "nofilter@npm:3.1.0"
-  checksum: 58aa85a5b4b35cbb6e42de8a8591c5e338061edc9f3e7286f2c335e9e9b9b8fa7c335ae45daa8a1f3433164dc0b9a3d187fa96f9516e04a17a1f9ce722becc4f
   languageName: node
   linkType: hard
 
@@ -5838,7 +5839,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^4.0.2, picomatch@npm:^4.0.3, picomatch@npm:^4.0.4":
+"picomatch@npm:^4.0.2, picomatch@npm:^4.0.4":
   version: 4.0.4
   resolution: "picomatch@npm:4.0.4"
   checksum: 76b387b5157951422fa6049a96bdd1695e39dd126cd99df34d343638dc5cdb8bcdc83fff288c23eddcf7c26657c35e3173d4d5f488c4f28b889b314472e0a662
@@ -6580,13 +6581,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slice-ansi@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "slice-ansi@npm:8.0.0"
+"slice-ansi@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "slice-ansi@npm:9.0.0"
   dependencies:
     ansi-styles: ^6.2.3
     is-fullwidth-code-point: ^5.1.0
-  checksum: a3a6947f2a87ebe8fe0de234184e2ff057ecb4532666acae60c6906d8d27253016d5890b6f2b1cb10b7763376b7626b60e54f489f657eb20cdfd8797ac04d2c1
+  checksum: 93bc3bfb66d4ec1bbe9e1f185869abcc1697cbafe8807188b34bc625f3554f877e02e4a13c8c67845296946364d225f622ac8438b837bf026f11d585b7427d96
   languageName: node
   linkType: hard
 
@@ -7595,7 +7596,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"write-file-atomic@npm:^7.0.0":
+"write-file-atomic@npm:^7.0.0, write-file-atomic@npm:^7.0.1":
   version: 7.0.1
   resolution: "write-file-atomic@npm:7.0.1"
   dependencies:

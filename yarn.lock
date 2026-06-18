@@ -41,13 +41,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ava/typescript@npm:~6.0.0":
-  version: 6.0.0
-  resolution: "@ava/typescript@npm:6.0.0"
+"@ava/typescript@npm:~7.0.0":
+  version: 7.0.0
+  resolution: "@ava/typescript@npm:7.0.0"
   dependencies:
     escape-string-regexp: ^5.0.0
-    execa: ^9.6.0
-  checksum: a76c5ef96d3d748604f77a45c5d3c0c3e04f5f2cf60e9dedaa10302113895d9a7b049a01307770d61732794339cd0db7b73b8b8721d124e186241627ad0c697e
+    execa: ^9.6.1
+  checksum: 9b11dc253017e9660e5f64a2689260b0016b81c944656d5c28ba335f02425079fab709100ec72e26931711b8301dc216b8bdd99c155a1882c8e6309767cadb4b
   languageName: node
   linkType: hard
 
@@ -1242,7 +1242,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zeepkist/combine@workspace:."
   dependencies:
-    "@ava/typescript": ~6.0.0
+    "@ava/typescript": ~7.0.0
     "@rushstack/eslint-patch": ~1.16.0
     "@semantic-release/changelog": ~6.0.2
     "@semantic-release/commit-analyzer": ~13.0.0
@@ -3016,7 +3016,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^9.0.0, execa@npm:^9.6.0":
+"execa@npm:^9.0.0, execa@npm:^9.6.1":
   version: 9.6.1
   resolution: "execa@npm:9.6.1"
   dependencies:

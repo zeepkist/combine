@@ -1254,7 +1254,7 @@ __metadata:
     "@typescript-eslint/parser": ~6.21.0
     ava: ~7.0.0
     c8: ~11.0.0
-    commander: ~14.0.0
+    commander: ~15.0.0
     csv-parse: ~6.2.0
     eslint: ~8.57.0
     eslint-config-prettier: ~9.1.0
@@ -2083,10 +2083,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:~14.0.0":
-  version: 14.0.3
-  resolution: "commander@npm:14.0.3"
-  checksum: b8440159124aefbb02784a8996cd0481d8ce503d8d3cd413f4289d06db7e912c36b511277c2faba62f59152dd9ff79239d75e3b9400d9402851878994201d429
+"commander@npm:~15.0.0":
+  version: 15.0.0
+  resolution: "commander@npm:15.0.0"
+  checksum: e8aaa24591ae09389e83320431d47b44d9b03abe754586b689020b6bb6fc950a0089e9379099efa2e63b6b7c0e1e216bcf6b485754da7a54a74840077f3c6d2b
   languageName: node
   linkType: hard
 

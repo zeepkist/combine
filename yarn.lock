@@ -1267,7 +1267,7 @@ __metadata:
     eslint-plugin-prettier: ~5.5.0
     eslint-plugin-simple-import-sort: ~10.0.0
     eslint-plugin-unicorn: ~49.0.0
-    prettier: ~3.8.0
+    prettier: ~3.9.0
     semantic-release: ~25.0.0
     tsx: ~4.22.0
     typescript: ~5.9.0
@@ -5970,12 +5970,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:~3.8.0":
-  version: 3.8.5
-  resolution: "prettier@npm:3.8.5"
+"prettier@npm:~3.9.0":
+  version: 3.9.4
+  resolution: "prettier@npm:3.9.4"
   bin:
     prettier: bin/prettier.cjs
-  checksum: ca4c888539a2d491281e8e8a7bb0f939afead881da864aa583e08cbfdd3c87888deba4991fcee67dde6c71a644a315a5d26781798fa8a7b6d5896a83121c5e16
+  checksum: 96b0125a8af78e1e3c2c3f916a768934a542d5fa64bf1819cbef5c9cb081b793ebe99eb202f98e230741595be9d14d73819380bd91988a7df422d704a97bb38c
   languageName: node
   linkType: hard
 

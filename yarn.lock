@@ -1269,7 +1269,7 @@ __metadata:
     eslint-plugin-unicorn: ~49.0.0
     prettier: ~3.9.0
     semantic-release: ~25.0.0
-    tsx: ~4.22.0
+    tsx: ~4.23.0
     typescript: ~5.9.0
   dependenciesMeta:
     esbuild:
@@ -7193,9 +7193,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:~4.22.0":
-  version: 4.22.4
-  resolution: "tsx@npm:4.22.4"
+"tsx@npm:~4.23.0":
+  version: 4.23.0
+  resolution: "tsx@npm:4.23.0"
   dependencies:
     esbuild: ~0.28.0
     fsevents: ~2.3.3
@@ -7204,7 +7204,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 21848c642032680c525d322d7e6b82fdf2bebfaa8b2911c413eb98a834fce89295ee315fb42de5597f4c2ba1ea06c4b71c2321ca47ecf1de065604324266c554
+  checksum: 7f84281fc5a61b370e0a78a22aea3409516f004b0cbbadd0bac6e60dcb67f368f212ed8a86847c0c649022d547201c0fc036c6f6484df97793ec6ce98431a454
   languageName: node
   linkType: hard
 

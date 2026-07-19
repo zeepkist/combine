@@ -1258,7 +1258,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ~6.21.0
     "@typescript-eslint/parser": ~6.21.0
     ava: ~8.0.0
-    c8: ~11.0.0
+    c8: ~12.0.0
     commander: ~15.0.0
     csv-parse: ~6.2.0
     eslint: ~8.57.0
@@ -1782,9 +1782,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"c8@npm:~11.0.0":
-  version: 11.0.0
-  resolution: "c8@npm:11.0.0"
+"c8@npm:~12.0.0":
+  version: 12.0.0
+  resolution: "c8@npm:12.0.0"
   dependencies:
     "@bcoe/v8-coverage": ^1.0.1
     "@istanbuljs/schema": ^0.1.3
@@ -1795,7 +1795,7 @@ __metadata:
     istanbul-reports: ^3.1.6
     test-exclude: ^8.0.0
     v8-to-istanbul: ^9.0.0
-    yargs: ^17.7.2
+    yargs: ^18.0.0
     yargs-parser: ^21.1.1
   peerDependencies:
     monocart-coverage-reports: ^2
@@ -1804,7 +1804,7 @@ __metadata:
       optional: true
   bin:
     c8: bin/c8.js
-  checksum: 9b28834d725446161ba5843f63384356d21a7d550b2297acc48c3a884b7f2c1bfee08c219922a88994063322ee706eb1f4611139ee4293397e3ab2a80bffa354
+  checksum: 23e26b6b7d73dff3b7e23caa1d2b1eefb1281dbddc3018bb8098fa8833fa49f07d20f65a46059609c66b6c9535430fbe012e9f3260acaab205b7c7e842b1f0dc
   languageName: node
   linkType: hard
 
@@ -2030,17 +2030,6 @@ __metadata:
     strip-ansi: ^6.0.0
     wrap-ansi: ^7.0.0
   checksum: ce2e8f578a4813806788ac399b9e866297740eecd4ad1823c27fd344d78b22c5f8597d548adbcc46f0573e43e21e751f39446c5a5e804a12aace402b7a315d7f
-  languageName: node
-  linkType: hard
-
-"cliui@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "cliui@npm:8.0.1"
-  dependencies:
-    string-width: ^4.2.0
-    strip-ansi: ^6.0.1
-    wrap-ansi: ^7.0.0
-  checksum: 79648b3b0045f2e285b76fb2e24e207c6db44323581e421c3acbd0e86454cba1b37aea976ab50195a49e7384b871e6dfb2247ad7dec53c02454ac6497394cb56
   languageName: node
   linkType: hard
 
@@ -6808,7 +6797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:^4.1.0, string-width@npm:^4.2.0, string-width@npm:^4.2.3":
+"string-width@npm:^4.1.0, string-width@npm:^4.2.0":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
   dependencies:
@@ -7755,21 +7744,6 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^20.2.2
   checksum: 0619aaa93d2f9bb1ec788a6bcb4d3dbd453db3097108dad3f74be326250cc86c1d57db9a829d7486adfb0e8d74bff365a6de8871c59af5d0a2f809de56d2ace2
-  languageName: node
-  linkType: hard
-
-"yargs@npm:^17.7.2":
-  version: 17.7.3
-  resolution: "yargs@npm:17.7.3"
-  dependencies:
-    cliui: ^8.0.1
-    escalade: ^3.1.1
-    get-caller-file: ^2.0.5
-    require-directory: ^2.1.1
-    string-width: ^4.2.3
-    y18n: ^5.0.5
-    yargs-parser: ^21.1.1
-  checksum: 16fb2d4866f04aaf74f206d3df843e7a80b58a26fda47af29be51b27564c19966b1674c3acf679a26fdfa8a7e4b1b442a63cdab5db8cd3c57db7912f4473e343
   languageName: node
   linkType: hard
 

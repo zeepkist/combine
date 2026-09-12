@@ -1292,7 +1292,7 @@ __metadata:
     ava: ~8.0.0
     c8: ~12.0.0
     commander: ~15.0.0
-    csv-parse: ~6.2.0
+    csv-parse: ~7.0.0
     eslint: ~8.57.0
     eslint-config-prettier: ~9.1.0
     eslint-plugin-import: ~2.32.0
@@ -2326,10 +2326,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csv-parse@npm:~6.2.0":
-  version: 6.2.1
-  resolution: "csv-parse@npm:6.2.1"
-  checksum: e9ac9c6f83ba8eb4522d40dc3f3b244ce8a008612555699de29966898786da45a35ea1ecca642ab70204db1a431a6e27c0bcd0c450a7da9f0307675b771b75b4
+"csv-parse@npm:~7.0.0":
+  version: 7.0.2
+  resolution: "csv-parse@npm:7.0.2"
+  checksum: 654d5bcec8e690891746bb7cbd4a2451797bb8fa0bf09823cf209955d0fd878c4015f530bb2e8aef61743ec13b7a7943921053784afc5414648cd2f1ee597c5a
   languageName: node
   linkType: hard
 
